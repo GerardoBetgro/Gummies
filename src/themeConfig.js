@@ -1,16 +1,28 @@
 import { createTheme } from "@mui/material/styles";
-import { teal, indigo } from "@mui/material/colors";
+import { orange, indigo } from "@mui/material/colors";
 
 const theme = createTheme({
     palette: {
         primary: {
-            main: indigo[700],
+            main: indigo[500],
             contrastText: '#fff',
         },
         secondary: {
-            main: teal[600],
+            main: orange[500],
             contrastText: '#fff',
         },
+        tree: {
+            main: '#69f0ae', 
+            contrastText: '#fff',
+        },
+        star: {
+            main: '#aeea00',
+            constrastText: '#fff',
+        },
+        light:{
+            main: '#fff',
+            constrastText: '#fff',
+        }
     },
 })
 
