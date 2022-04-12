@@ -12,17 +12,25 @@ const theme = createTheme({
             contrastText: '#fff',
         },
         tree: {
-            main: '#69f0ae', 
+            main: '#69f0ae',
             contrastText: '#fff',
         },
         star: {
             main: '#aeea00',
             constrastText: '#fff',
         },
-        light:{
+        light: {
             main: '#fff',
             constrastText: '#fff',
         }
+    },
+    breakpoints: {
+        values: {
+            mobile: 0,
+            tablet: 640,
+            laptop: 1024,
+            desktop: 1280,
+        },
     },
 })
 

@@ -4,6 +4,7 @@ import Navbar from "./componentes/Navbar";
 import Hero from "./componentes/Hero";
 import Cards from "./componentes/Cards";
 import theme from "./themeConfig";
+import './componentes/Styles.css';
 
 function App() {
   return (
