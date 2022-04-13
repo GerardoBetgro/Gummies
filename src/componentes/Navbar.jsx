@@ -14,11 +14,10 @@ const Navbar = () => {
                         <MenuIcon color="light"/> 
                     </IconButton>
                     <Typography variant="h6" sx={{flexGrow:1}}>
-                        Gummies
+                        Gomitas
                     </Typography>
-                    <Button color="inherit">About</Button>
-                    <Button color="inherit">Products</Button>
-                    <Button color="inherit">Contact</Button>
+                    <Button color="inherit">Productos</Button>
+                    <Button color="inherit">Contacto</Button>
                 </Toolbar>
             </AppBar>
             <Offset/>

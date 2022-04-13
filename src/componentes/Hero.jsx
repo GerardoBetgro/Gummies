@@ -1,15 +1,27 @@
-import React, {Fragment} from 'react';
-import { Button } from '@mui/material';
-import sleep from '../assets/sleep 1.svg';
+import React from "react";
+import { Button, Typography } from "@mui/material";
+import AddShoppingCartRoundedIcon from "@mui/icons-material/AddShoppingCartRounded";
 
 const Hero = () => {
-    return (
-        <Fragment>
-            <div className='img'>
-                <img src={sleep} alt="sleep hero" width='700' height='550'/>
-            </div>
-        </Fragment>
-    );
-}
+  return (
+    <div className="img">
+      <Typography variant="h1" sx={{ my: 2}}>
+        Gomitas para Dormir
+      </Typography>
+      <Typography variant="h4" sx={{ my: 2 }}>
+        “Hoy ha sido un día muy especial, espero que descanses”.
+      </Typography>
+      <Button
+        variant="contained"
+        align="center"
+        className="copy"
+        sx={{ my: 2 }}
+        endIcon={<AddShoppingCartRoundedIcon />}
+      >
+        Pide ahora!
+      </Button>
+    </div>
+  );
+};
 
 export default Hero;
