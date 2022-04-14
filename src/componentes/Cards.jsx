@@ -4,9 +4,6 @@ import { Card, CardMedia, CardContent, Button, Typography, CardActions } from '@
 const Cards = () => {
   return (
     <Fragment>
-      <Typography variant='h2'>
-        Nuestros productos
-      </Typography>
       <Card sx={{ maxWidth: 345 }} className='card'>
         <CardMedia
           component="img"
