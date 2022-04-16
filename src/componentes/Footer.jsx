@@ -7,7 +7,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 function Copyright() {
   return (
-    <Typography variant="body2" color="text.secondary">
+    <Typography variant="h6" color="text.secondary">
       <Link
         color="inherit"
         href="https://gera-es.web.app/"
@@ -43,13 +43,13 @@ const Footer = () => {
             }}
           >
             <IconButton>
-              <FacebookIcon sx={{ color: blue[500] }} />
+              <FacebookIcon fontSize="large" sx={{ color: blue[500] }} />
             </IconButton>
             <IconButton>
-              <InstagramIcon sx={{ color: pink[500] }} />
+              <InstagramIcon fontSize="large" sx={{ color: pink[500] }} />
             </IconButton>
             <IconButton>
-              <WhatsAppIcon sx={{ color: green[500] }} />
+              <WhatsAppIcon fontSize="large" sx={{ color: green[500] }} />
             </IconButton>
           </Box>
           <Box sx={{

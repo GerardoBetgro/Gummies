@@ -1,15 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 import { AppBar, Button, IconButton, Toolbar, Typography } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import { styled } from '@mui/material/styles';
-import { ThemeProvider } from "@emotion/react";
-import theme from "../themeConfig";
 
 const Offset = styled('div')(({ theme }) => theme.mixins.toolbar);
 
 const Navbar = () => {
     return (
-        <ThemeProvider theme={theme}>
+        <Fragment>
             <AppBar position="fixed" color="dark">
                 <Toolbar>
                     <IconButton>
@@ -23,7 +21,7 @@ const Navbar = () => {
                 </Toolbar>
             </AppBar>
             <Offset />
-        </ThemeProvider>
+        </Fragment>
     );
 }
 
