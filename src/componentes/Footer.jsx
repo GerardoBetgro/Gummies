@@ -8,13 +8,12 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
-      {"Copyright ©"}
       <Link
         color="inherit"
         href="https://gera-es.web.app/"
         sx={{ textDecoration: "none", fontWeight: "bold" }}
       >
-        Gomitas para el sueño
+        © Gomitas para dormir 2022
       </Link>
     </Typography>
   );
@@ -52,6 +51,13 @@ const Footer = () => {
             <IconButton>
               <WhatsAppIcon sx={{ color: green[500] }} />
             </IconButton>
+          </Box>
+          <Box sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          >
             <Copyright />
           </Box>
         </Container>

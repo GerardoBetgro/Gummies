@@ -21,9 +21,23 @@ const theme = createTheme({
         },
         light: {
             main: '#fff',
-            constrastText: '#fff',
-        }
+            constrastText: '#000',
+        },
+        dark: {
+            main: '#121858',
+            contrastText: '#fff',
+        },
     },
 })
+
+theme.typography.h1 = {
+    fontSize: '3rem',
+    '@media (min-width:600px)': {
+        fontSize: '3rem',
+    },
+    [theme.breakpoints.up('md')]: {
+        fontSize: '5rem',
+    },
+};
 
 export default theme;

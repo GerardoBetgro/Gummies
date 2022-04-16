@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import { Card, CardMedia, CardContent, Button, Typography, CardActions } from '@mui/material';
+import './Styles.css';
 
 const Cards = () => {
   return (
