@@ -22,9 +22,6 @@ const Hero = () => {
           Pide ahora!
         </Button>
       </div>
-      <Typography variant="h2" sx={{mt:'2rem'}} align="center" className="letters">
-        Nuestros Productos
-      </Typography>
     </Fragment>
   );
 };

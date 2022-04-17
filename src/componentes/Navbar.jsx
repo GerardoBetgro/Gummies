@@ -1,27 +1,28 @@
 import React, { Fragment } from "react";
-import { AppBar, Button, IconButton, Toolbar, Typography } from "@mui/material";
+import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { styled } from "@mui/material/styles";
 //import { Routes, Route, NavLink } from "react-router-dom";
 
-const Offset = styled("div")(({ theme }) => theme.mixins.toolbar);
-
-const Navbar = () => {
+const Navbar = (props) => {
   return (
     <Fragment>
-      <AppBar position="fixed" color="dark">
+      <AppBar
+        position="fixed"
+        color="dark"
+        sx={{
+          width: { lg: `calc(100% - ${280}px)` },
+          ml: { lg: `${280}px` },
+        }}
+      >
         <Toolbar>
-          <IconButton>
+          <IconButton onClick={() => props.accionAbrir()} sx={{ mr: 2, display: { lg: 'none'} }}>
             <MenuIcon color="light" />
           </IconButton>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
             Gomitas
           </Typography>
-          <Button color="inherit">Productos</Button>
-          <Button color="inherit">Contacto</Button>
         </Toolbar>
       </AppBar>
-      <Offset />
     </Fragment>
   );
 };

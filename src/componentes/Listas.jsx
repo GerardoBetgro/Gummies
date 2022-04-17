@@ -11,13 +11,13 @@ const Listas = () => {
                     <ListItemIcon>
                         <InventoryIcon/>
                     </ListItemIcon>
-                    <ListItemText primary='Elemento1'/>
+                    <ListItemText primary='Productos'/>
                 </ListItem>
                 <ListItem button>
                     <ListItemIcon>
                         <ShoppingCartCheckoutIcon/>
                     </ListItemIcon>
-                    <ListItemText primary='Elemento2'/>
+                    <ListItemText primary='Contacto'/>
                 </ListItem>
                 <Divider/>
             </List>

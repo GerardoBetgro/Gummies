@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "./Navbar";
+import Cajon from "./Cajon";
 import { Box } from "@mui/system";
-import { styled } from "@mui/material/styles";
-
-const Div = styled("div")(({ theme }) => theme.mixins.toolbar);
 
 const Contenedor = () => {
+  const [abrir,setAbrir] = useState(false)
+  
+  const accionAbrir = () => {
+    setAbrir(!abrir)
+  }
+
   return (
-    <Box sx={{display:'flex'}}>
-      <Navbar />
-      <Box sx={{flexGrow:1, p:'3rem', backgroundColor:'white'}}>
-        <Div/>
-        contenido
+    <Box sx={{ display: "flex" }}>
+      <Navbar accionAbrir={accionAbrir}/>
+      {/* Cajon para pantalla completa */}
+      <Box sx={{ display: { xs: "none", sm: "none", md:"none", lg:"block", xl:"block" } }}>
+        <Cajon variant='permanent' open={true}/>
       </Box>
+      {/* Cajon para tablet y celular */}
+      <Box sx={{ display: { xs: 'block', sm: 'block', md: 'block', lg:"block", xl:"none" } }}>
+        <Cajon variant='temporary' open={abrir} onClose={accionAbrir}/>
+      </Box>
+      
     </Box>
   );
 };

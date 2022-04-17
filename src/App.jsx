@@ -13,13 +13,9 @@ function App() {
     <ThemeProvider theme={theme}>
       <Contenedor />
       <Hero />
-      <div className="flex">
-        <Cards />
-        <Cards />
-        <Cards />
-      </div>
-      <About/>
-      <Footer/>
+      <Cards />
+      <About />
+      <Footer />
     </ThemeProvider>
   );
 }
