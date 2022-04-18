@@ -10,13 +10,14 @@ import {
   Box,
   Tooltip,
 } from "@mui/material";
+import picture from "../assets/gummies.webp";
 import "./Styles.css";
 
 const Cards = () => {
   return (
     <Box sx={{
-      width: { xl: `calc(100% - ${280}px)` },
-      mr: { xl: `${280}px` },
+      width: { xl: `calc(100% - ${240}px)` },
+      mr: { xl: `${240}px` },
     }}>
       <Typography
         variant="h2"
@@ -31,8 +32,8 @@ const Cards = () => {
           <CardMedia
             component="img"
             alt="gummies"
-            height="340"
-            image="https://http2.mlstatic.com/D_NQ_NP_660055-MLM47123671582_082021-O.webp"
+            height="440"
+            src={picture}
           />
           <CardContent className="card">
             <Typography gutterBottom variant="h5" component="div">
@@ -67,8 +68,8 @@ const Cards = () => {
           <CardMedia
             component="img"
             alt="gummies"
-            height="340"
-            image="https://http2.mlstatic.com/D_NQ_NP_660055-MLM47123671582_082021-O.webp"
+            height="440"
+            src={picture}
           />
           <CardContent className="card">
             <Typography gutterBottom variant="h5" component="div">
@@ -103,8 +104,8 @@ const Cards = () => {
           <CardMedia
             component="img"
             alt="gummies"
-            height="340"
-            image="https://http2.mlstatic.com/D_NQ_NP_660055-MLM47123671582_082021-O.webp"
+            height="440"
+            src={picture}
           />
           <CardContent className="card">
             <Typography gutterBottom variant="h5" component="div">

@@ -27,8 +27,8 @@ const theme = createTheme({
             main: '#121858',
             contrastText: '#fff',
         },
-        cereza: {
-            main: '#ab003c',
+        gray: {
+            main: '#78909c',
             contrastText: '#fff',
         }
     },

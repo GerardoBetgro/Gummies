@@ -2,7 +2,6 @@ import React from "react";
 import { AppBar, IconButton, Toolbar, Typography, Tooltip } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import BedtimeIcon from '@mui/icons-material/Bedtime';
-//import { Routes, Route, NavLink } from "react-router-dom";
 
 const Navbar = (props) => {
   return (
@@ -10,8 +9,8 @@ const Navbar = (props) => {
       position="fixed"
       color="dark"
       sx={{
-        width: { xl: `calc(100% - ${280}px)` },
-        mr: { xl: `${280}px` },
+        width: { xl: `calc(100% - ${240}px)` },
+        mr: { xl: `${240}px` },
       }}
     >
       <Toolbar>

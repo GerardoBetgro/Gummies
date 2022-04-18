@@ -5,15 +5,15 @@ import AddShoppingCartRoundedIcon from "@mui/icons-material/AddShoppingCartRound
 const Hero = () => {
   return (
     <Box className="img" sx={{
-      width: { xl: `calc(100% - ${280}px)` },
-      mr: { xl: `${280}px` },
+      width: { xl: `calc(100% - ${240}px)` },
+      mr: { xl: `${240}px` },
     }}>
       <Typography variant="h1" sx={{ my: 2 }}>
         Gomitas para Dormir
       </Typography>
-      <Typography variant="h4" sx={{ my: 2 }}>
+      {/* <Typography variant="h4" sx={{ my: 2 }}>
         “Hoy ha sido un día muy especial, espero que descanses”.
-      </Typography>
+      </Typography> */}
       <Tooltip title='Vamos allá'>
         <Button
           variant="contained"

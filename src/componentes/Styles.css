@@ -20,22 +20,15 @@ body{
 
 .card{
     background-color: #fff;
-    /* background-image: linear-gradient(to bottom, #e8f5e9 0%, #2e7d32 100%); */
-    /* background-image: linear-gradient(to bottom, #fff1eb 0%, #ff9800 100%); */
 }
 
 .buttons{
     background-color: #fff;
-    /* background-color: #2e7d32; */
-    /* background-color: #ff9800; */
-    /* background-color: #ad1457; */
 }
 
 .img{
     height: 100vh;
     background-image: linear-gradient(45deg, rgba(92, 38, 193, 0.5) 0%, rgba(161, 127, 224, 0.5) 1%, rgba(89, 193, 115, 0.5) 100%),url('../assets/sleep.webp');
-    /* background-image: linear-gradient(120deg, rgba(241, 147, 251, 0.5) 0%, rgba(217, 222, 216, 0.5) 100%),url('../assets/sleep.webp'); */
-    /* background-image: linear-gradient(180deg, rgba(36, 11, 54, 0.5) 0%, rgba(195, 20, 49, 0.5) 100%),url('../assets/sleep.webp'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -47,15 +40,4 @@ body{
     flex-direction: column;
     position: relative;
     color: white;
-    /* animation: myAnim 5s ease 0s 1 normal forwards; */
-}
-
-@keyframes myAnim {
-	0% {
-		background-position: 100% 50%;
-	}
-
-	100% {
-		background-position: 0% 50%;
-	}
 }
