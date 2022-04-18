@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import { Box, Container, Typography, Link, IconButton } from "@mui/material";
+import React from "react";
+import { Box, Container, Typography, Link, IconButton, Tooltip } from "@mui/material";
 import { blue, pink, green } from "@mui/material/colors";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -21,48 +21,54 @@ function Copyright() {
 
 const Footer = () => {
   return (
-    <Fragment>
-      <Box
-        component="footer"
-        sx={{
-          py: 3,
-          px: 2,
-          mt: "auto",
-          backgroundColor: (theme) =>
-            theme.palette.mode === "light"
-              ? theme.palette.grey[200]
-              : theme.palette.grey[800],
-        }}
-      >
-        <Container maxWidth="sm">
-          <Box
-            sx={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <IconButton>
-              <FacebookIcon fontSize="large" sx={{ color: blue[500] }} />
-            </IconButton>
-            <IconButton>
-              <InstagramIcon fontSize="large" sx={{ color: pink[500] }} />
-            </IconButton>
-            <IconButton>
-              <WhatsAppIcon fontSize="large" sx={{ color: green[500] }} />
-            </IconButton>
-          </Box>
-          <Box sx={{
+    <Box
+      component="footer"
+      sx={{
+        py: 3,
+        px: 2,
+        mt: "auto",
+        backgroundColor: (theme) =>
+          theme.palette.mode === "light"
+            ? theme.palette.grey[200]
+            : theme.palette.grey[800],
+        width: { xl: `calc(100% - ${280}px)` },
+        mr: { xl: `${280}px` },
+      }}
+    >
+      <Container maxWidth="sm">
+        <Box
+          sx={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
           }}
-          >
-            <Copyright />
-          </Box>
-        </Container>
-      </Box>
-    </Fragment>
+        >
+          <Tooltip title='Facebook'>
+            <IconButton>
+              <FacebookIcon fontSize="large" sx={{ color: blue[500] }} />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title='Instagram'>
+            <IconButton>
+              <InstagramIcon fontSize="large" sx={{ color: pink[500] }} />
+            </IconButton>
+          </Tooltip>
+          <Tooltip title='WhatsApp'>
+            <IconButton>
+              <WhatsAppIcon fontSize="large" sx={{ color: green[500] }} />
+            </IconButton>
+          </Tooltip>
+        </Box>
+        <Box sx={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+        >
+          <Copyright />
+        </Box>
+      </Container >
+    </Box >
   );
 };
 

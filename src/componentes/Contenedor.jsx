@@ -13,15 +13,14 @@ const Contenedor = () => {
   return (
     <Box sx={{ display: "flex" }}>
       <Navbar accionAbrir={accionAbrir}/>
-      {/* Cajon para pantalla completa */}
-      <Box sx={{ display: { xs: "none", sm: "none", md:"none", lg:"block", xl:"block" } }}>
+      {/* Cajon para pantalla completa, solo monitores */}
+      <Box sx={{ display: { xs: "none", sm: "none", md:"none", lg:"none", xl:"block" } }}>
         <Cajon variant='permanent' open={true}/>
       </Box>
-      {/* Cajon para tablet y celular */}
+      {/* Cajon para laptop, tablet y celular */}
       <Box sx={{ display: { xs: 'block', sm: 'block', md: 'block', lg:"block", xl:"none" } }}>
         <Cajon variant='temporary' open={abrir} onClose={accionAbrir}/>
       </Box>
-      
     </Box>
   );
 };

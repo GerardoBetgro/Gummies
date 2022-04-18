@@ -1,17 +1,20 @@
-import React, { Fragment } from "react";
-import { Button, Typography } from "@mui/material";
+import React from "react";
+import { Box, Button, Tooltip, Typography } from "@mui/material";
 import AddShoppingCartRoundedIcon from "@mui/icons-material/AddShoppingCartRounded";
 
 const Hero = () => {
   return (
-    <Fragment>
-      <div className="img">
-        <Typography variant="h1" sx={{ my: 2 }}>
-          Gomitas para Dormir
-        </Typography>
-        <Typography variant="h4" sx={{ my: 2 }}>
-          “Hoy ha sido un día muy especial, espero que descanses”.
-        </Typography>
+    <Box className="img" sx={{
+      width: { xl: `calc(100% - ${280}px)` },
+      mr: { xl: `${280}px` },
+    }}>
+      <Typography variant="h1" sx={{ my: 2 }}>
+        Gomitas para Dormir
+      </Typography>
+      <Typography variant="h4" sx={{ my: 2 }}>
+        “Hoy ha sido un día muy especial, espero que descanses”.
+      </Typography>
+      <Tooltip title='Vamos allá'>
         <Button
           variant="contained"
           align="center"
@@ -21,8 +24,8 @@ const Hero = () => {
         >
           Pide ahora!
         </Button>
-      </div>
-    </Fragment>
+      </Tooltip>
+    </Box>
   );
 };
 

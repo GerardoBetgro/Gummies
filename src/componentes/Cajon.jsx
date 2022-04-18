@@ -16,7 +16,7 @@ const Cajon = (props) => {
           boxSizing: "border-box",
         },
       }}
-      anchor="left"
+      anchor="right"
       variant={props.variant}
       open={props.open}
       onClose={props.onClose ? props.onClose : null}

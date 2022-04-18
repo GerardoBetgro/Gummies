@@ -1,14 +1,17 @@
-import React, { Fragment } from "react";
-import { Typography, Container } from "@mui/material";
+import React from "react";
+import { Box, Typography, Container } from "@mui/material";
 import "./Styles.css";
 
 const About = () => {
   return (
-    <Fragment>
-      <Typography variant="h2" sx={{mb:'1rem'}} align="center" className="letters">
+    <Box sx={{
+      width: { xl: `calc(100% - ${280}px)` },
+      mr: { xl: `${280}px` },
+    }}>
+      <Typography variant="h2" sx={{ mb: '1rem' }} align="center" className="letters">
         Acerca de nuestros productos
       </Typography>
-      <Container sx={{mb:'2rem'}}>
+      <Container sx={{ mb: '2rem' }}>
         <Typography variant="subtitle1" className="letters">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
           vitae! Voluptates consequatur, porro enim iure ipsum aspernatur
@@ -29,10 +32,10 @@ const About = () => {
           optio atque accusamus recusandae unde fugit id qui ullam repellat
           dolore reiciendis dolorum sint deleniti repudiandae tenetur modi?
           Similique necessitatibus neque obcaecati consectetur excepturi
-          deleniti ipsum quis, pariatur magnam cumque sit? 
+          deleniti ipsum quis, pariatur magnam cumque sit?
         </Typography>
       </Container>
-    </Fragment>
+    </Box>
   );
 };
 

@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import {
   Card,
   CardMedia,
@@ -7,12 +7,17 @@ import {
   Typography,
   CardActions,
   ButtonGroup,
+  Box,
+  Tooltip,
 } from "@mui/material";
 import "./Styles.css";
 
 const Cards = () => {
   return (
-    <Fragment>
+    <Box sx={{
+      width: { xl: `calc(100% - ${280}px)` },
+      mr: { xl: `${280}px` },
+    }}>
       <Typography
         variant="h2"
         sx={{ mt: "2rem" }}
@@ -21,7 +26,7 @@ const Cards = () => {
       >
         Nuestros Productos
       </Typography>
-      <div className="flex">
+      <Box className="flex">
         <Card sx={{ maxWidth: 345, my: "2.5rem", mx: "1.5rem" }}>
           <CardMedia
             component="img"
@@ -49,11 +54,13 @@ const Cards = () => {
               },
             }}
           >
-            <ButtonGroup>
-              <Button size="small" variant="contained" color="secondary">
-                Leer Más
-              </Button>
-            </ButtonGroup>
+            <Tooltip title='Abrir'>
+              <ButtonGroup>
+                <Button size="small" variant="contained" color="secondary">
+                  Leer Más
+                </Button>
+              </ButtonGroup>
+            </Tooltip>
           </CardActions>
         </Card>
         <Card sx={{ maxWidth: 345, my: "2.5rem", mx: "1.5rem" }}>
@@ -83,11 +90,13 @@ const Cards = () => {
               },
             }}
           >
-            <ButtonGroup>
-              <Button size="small" variant="contained" color="secondary">
-                Leer Más
-              </Button>
-            </ButtonGroup>
+            <Tooltip title='Abrir'>
+              <ButtonGroup>
+                <Button size="small" variant="contained" color="secondary">
+                  Leer Más
+                </Button>
+              </ButtonGroup>
+            </Tooltip>
           </CardActions>
         </Card>
         <Card sx={{ maxWidth: 345, my: "2.5rem", mx: "1.5rem" }}>
@@ -117,15 +126,17 @@ const Cards = () => {
               },
             }}
           >
-            <ButtonGroup>
-              <Button size="small" variant="contained" color="secondary">
-                Leer Más
-              </Button>
-            </ButtonGroup>
+            <Tooltip title='Abrir'>
+              <ButtonGroup>
+                <Button size="small" variant="contained" color="secondary">
+                  Leer Más
+                </Button>
+              </ButtonGroup>
+            </Tooltip>
           </CardActions>
         </Card>
-      </div>
-    </Fragment>
+      </Box>
+    </Box>
   );
 };
 
