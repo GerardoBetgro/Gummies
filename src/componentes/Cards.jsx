@@ -15,10 +15,12 @@ import "./Styles.css";
 
 const Cards = () => {
   return (
-    <Box sx={{
-      width: { xl: `calc(100% - ${240}px)` },
-      mr: { xl: `${240}px` },
-    }}>
+    <Box
+      sx={{
+        width: { xl: `calc(100% - ${240}px)` },
+        mr: { xl: `${240}px` },
+      }}
+    >
       <Typography
         variant="h2"
         sx={{ mt: "2rem" }}
@@ -29,19 +31,15 @@ const Cards = () => {
       </Typography>
       <Box className="flex">
         <Card sx={{ maxWidth: 345, my: "2.5rem", mx: "1.5rem" }}>
-          <CardMedia
-            component="img"
-            alt="gummies"
-            height="440"
-            src={picture}
-          />
+          <CardMedia component="img" alt="gummies" height="440" src={picture} />
           <CardContent className="card">
             <Typography gutterBottom variant="h5" component="div">
               Gomitas
             </Typography>
-            <Typography variant="body2" color="text.primary">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              architecto!
+            <Typography variant="body1" color="text.primary">
+              Belabear Buenas Noches, 1 Bolsa 28 Gomas. 
+              Cont. Net. 78.4 g <br/>
+              Sabor: Naranja
             </Typography>
           </CardContent>
           <CardActions
@@ -55,7 +53,7 @@ const Cards = () => {
               },
             }}
           >
-            <Tooltip title='Abrir'>
+            <Tooltip title="Abrir">
               <ButtonGroup>
                 <Button size="small" variant="contained" color="secondary">
                   Leer Más
@@ -65,19 +63,15 @@ const Cards = () => {
           </CardActions>
         </Card>
         <Card sx={{ maxWidth: 345, my: "2.5rem", mx: "1.5rem" }}>
-          <CardMedia
-            component="img"
-            alt="gummies"
-            height="440"
-            src={picture}
-          />
+          <CardMedia component="img" alt="gummies" height="440" src={picture} />
           <CardContent className="card">
             <Typography gutterBottom variant="h5" component="div">
               Gomitas
             </Typography>
-            <Typography variant="body2" color="text.primary">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              architecto!
+            <Typography variant="body1" color="text.primary">
+              Belabear Buenas Noches, 1 Bolsa 28 Gomas. 
+              Cont. Net. 78.4 g <br/>
+              Sabor: Naranja
             </Typography>
           </CardContent>
           <CardActions
@@ -91,7 +85,7 @@ const Cards = () => {
               },
             }}
           >
-            <Tooltip title='Abrir'>
+            <Tooltip title="Abrir">
               <ButtonGroup>
                 <Button size="small" variant="contained" color="secondary">
                   Leer Más
@@ -101,19 +95,15 @@ const Cards = () => {
           </CardActions>
         </Card>
         <Card sx={{ maxWidth: 345, my: "2.5rem", mx: "1.5rem" }}>
-          <CardMedia
-            component="img"
-            alt="gummies"
-            height="440"
-            src={picture}
-          />
+          <CardMedia component="img" alt="gummies" height="440" src={picture} />
           <CardContent className="card">
             <Typography gutterBottom variant="h5" component="div">
               Gomitas
             </Typography>
-            <Typography variant="body2" color="text.primary">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui,
-              architecto!
+            <Typography variant="body1" color="text.primary">
+              Belabear Buenas Noches, 1 Bolsa 28 Gomas. 
+              Cont. Net. 78.4 g <br/>
+              Sabor: Naranja
             </Typography>
           </CardContent>
           <CardActions
@@ -127,7 +117,7 @@ const Cards = () => {
               },
             }}
           >
-            <Tooltip title='Abrir'>
+            <Tooltip title="Abrir">
               <ButtonGroup>
                 <Button size="small" variant="contained" color="secondary">
                   Leer Más

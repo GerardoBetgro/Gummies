@@ -4,35 +4,39 @@ import "./Styles.css";
 
 const About = () => {
   return (
-    <Box sx={{
-      width: { xl: `calc(100% - ${240}px)` },
-      mr: { xl: `${240}px` },
-    }}>
-      <Typography variant="h2" sx={{ mb: '1rem' }} align="center" className="letters">
+    <Box
+      sx={{
+        width: { xl: `calc(100% - ${240}px)` },
+        mr: { xl: `${240}px` },
+      }}
+    >
+      <Typography
+        variant="h2"
+        sx={{ mb: "1rem" }}
+        align="center"
+        className="letters"
+      >
         Acerca de nuestros productos
       </Typography>
-      <Container sx={{ mb: '2rem' }}>
+      <Container sx={{ mb: "2rem" }}>
         <Typography variant="subtitle1" className="letters">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
-          vitae! Voluptates consequatur, porro enim iure ipsum aspernatur
-          similique qui accusamus quibusdam nam libero, quaerat cupiditate
-          assumenda ut laboriosam dolore fugit a nemo nisi autem, eos quidem
-          provident delectus vel? Laborum fugiat voluptatem voluptatibus sint
-          libero consequuntur et optio obcaecati totam quos, cum dolor impedit
-          alias magnam voluptas? Alias minima praesentium rerum quisquam omnis
-          dolorum, ullam eos quos odit, cum nihil expedita laborum quod ipsam
-          reprehenderit suscipit. Id rem numquam magni, accusantium impedit, et
-          sint repellat aut vel exercitationem odio incidunt dolorum? Magnam
-          ducimus voluptatum mollitia dolorem voluptas laborum cumque aperiam
-          veritatis distinctio facere, laboriosam sequi a, dignissimos velit.
-          Neque fuga maiores animi officiis nisi, inventore adipisci illo,
-          facilis, at deleniti mollitia. Inventore voluptatibus officiis,
-          aliquam eaque nesciunt nihil natus, error nemo hic asperiores illum ab
-          amet blanditiis? Earum laboriosam possimus, incidunt, eius repellendus
-          optio atque accusamus recusandae unde fugit id qui ullam repellat
-          dolore reiciendis dolorum sint deleniti repudiandae tenetur modi?
-          Similique necessitatibus neque obcaecati consectetur excepturi
-          deleniti ipsum quis, pariatur magnam cumque sit?
+          De seguro has visto alguna vez entre productos alimenticios o en
+          farmacias las "Gomitas para Dormir", estas son como cualquier otra
+          golosina, sin embargo, contienen algunos compuestos y fármacos,
+          principalmente la Melatonina, que ayudan a las personas a conciliar el
+          sueño, en quienes padecen de insomnio. Cuando se padece de insomnio,
+          se sabe lo desesperante que puede llegar a ser. El estrés del día a
+          día y las preocupaciones pueden afectar los ritmos biológicos y hacer
+          que cueste quedarse dormido por la noche o despertarse más temprano,
+          de madrugada. A quienes han sufrido de insomnio, muchas veces se les
+          recomienda tomar Melatonina. Esta es una hormona que nuestro cuerpo
+          produce naturalmente y es la encargada de regular el sueño, sin
+          embargo hay personas que tienen problemas para su producción y corren
+          a comprarla para al fin poder dormir. Esta se puede encontrar en
+          medicamentos en diferente presentación (pastillas, cápsulas, gotas) y
+          algunos alimentos, pero últimamente las gomitas de melatonina han
+          tomado mucha fama debido a sus beneficios, pero también por su sabor y
+          su forma tan divertida.
         </Typography>
       </Container>
     </Box>
