@@ -6,7 +6,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
-export const SocialMedia = () => {
+const SocialMedia = () => {
   return (
     <Box
       sx={{
@@ -32,5 +32,5 @@ export const SocialMedia = () => {
       </Tooltip>
     </Box>
   );
-};
+}
 export default SocialMedia;

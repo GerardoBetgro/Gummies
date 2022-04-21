@@ -23,6 +23,6 @@ const Contenedor = () => {
       </Box>
     </Box>
   );
-};
+}
 
 export default Contenedor;

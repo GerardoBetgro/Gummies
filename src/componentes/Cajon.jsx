@@ -44,6 +44,6 @@ const Cajon = (props) => {
       </Box>
     </Drawer>
   );
-};
+}
 
 export default Cajon;

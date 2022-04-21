@@ -3,14 +3,13 @@ import {
   Card,
   CardMedia,
   CardContent,
-  Button,
   Typography,
   CardActions,
   ButtonGroup,
   Box,
-  Tooltip,
 } from "@mui/material";
 import picture from "../assets/gummies.webp";
+import Opening from "./Opening";
 import "./Styles.css";
 
 const Cards = () => {
@@ -37,9 +36,7 @@ const Cards = () => {
               Gomitas
             </Typography>
             <Typography variant="body1" color="text.primary">
-              Belabear Buenas Noches, 1 Bolsa 28 Gomas. 
-              Cont. Net. 78.4 g <br/>
-              Sabor: Naranja
+              Belabear Buenas Noches, 1 bolsa con 28 gomas marca Belabear.
             </Typography>
           </CardContent>
           <CardActions
@@ -53,13 +50,9 @@ const Cards = () => {
               },
             }}
           >
-            <Tooltip title="Abrir">
-              <ButtonGroup>
-                <Button size="small" variant="contained" color="secondary">
-                  Leer Más
-                </Button>
-              </ButtonGroup>
-            </Tooltip>
+            <ButtonGroup>
+              <Opening size="small" variant="contained" color="secondary" />
+            </ButtonGroup>
           </CardActions>
         </Card>
         <Card sx={{ maxWidth: 345, my: "2.5rem", mx: "1.5rem" }}>
@@ -69,9 +62,7 @@ const Cards = () => {
               Gomitas
             </Typography>
             <Typography variant="body1" color="text.primary">
-              Belabear Buenas Noches, 1 Bolsa 28 Gomas. 
-              Cont. Net. 78.4 g <br/>
-              Sabor: Naranja
+              Belabear Buenas Noches, 1 bolsa con 28 gomas marca Belabear.
             </Typography>
           </CardContent>
           <CardActions
@@ -85,13 +76,9 @@ const Cards = () => {
               },
             }}
           >
-            <Tooltip title="Abrir">
-              <ButtonGroup>
-                <Button size="small" variant="contained" color="secondary">
-                  Leer Más
-                </Button>
-              </ButtonGroup>
-            </Tooltip>
+            <ButtonGroup>
+              <Opening size="small" variant="contained" color="secondary" />
+            </ButtonGroup>
           </CardActions>
         </Card>
         <Card sx={{ maxWidth: 345, my: "2.5rem", mx: "1.5rem" }}>
@@ -101,9 +88,7 @@ const Cards = () => {
               Gomitas
             </Typography>
             <Typography variant="body1" color="text.primary">
-              Belabear Buenas Noches, 1 Bolsa 28 Gomas. 
-              Cont. Net. 78.4 g <br/>
-              Sabor: Naranja
+              Belabear Buenas Noches, 1 bolsa con 28 gomas marca Belabear.
             </Typography>
           </CardContent>
           <CardActions
@@ -117,13 +102,9 @@ const Cards = () => {
               },
             }}
           >
-            <Tooltip title="Abrir">
-              <ButtonGroup>
-                <Button size="small" variant="contained" color="secondary">
-                  Leer Más
-                </Button>
-              </ButtonGroup>
-            </Tooltip>
+            <ButtonGroup>
+              <Opening size="small" variant="contained" color="secondary" />
+            </ButtonGroup>
           </CardActions>
         </Card>
       </Box>

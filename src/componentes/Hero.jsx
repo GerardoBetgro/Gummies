@@ -27,6 +27,6 @@ const Hero = () => {
       </Tooltip>
     </Box>
   );
-};
+}
 
 export default Hero;

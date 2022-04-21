@@ -30,6 +30,6 @@ const Navbar = (props) => {
       </Toolbar>
     </AppBar>
   );
-};
+}
 
 export default Navbar;

@@ -2,7 +2,7 @@ import React from "react";
 import SocialMedia from "./SocialMedia";
 import { Box, Container, Typography, Link } from "@mui/material";
 
-function Copyright() {
+const Copyright = () => {
   return (
     <Typography variant="h6" color="text.secondary">
       <Link
@@ -45,6 +45,6 @@ const Footer = () => {
       </Container>
     </Box>
   );
-};
+}
 
 export default Footer;

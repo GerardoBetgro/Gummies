@@ -41,6 +41,6 @@ const About = () => {
       </Container>
     </Box>
   );
-};
+}
 
 export default About;

@@ -41,6 +41,6 @@ const Listas = () => {
       <Divider color="white" />
     </List>
   );
-};
+}
 
 export default Listas;
