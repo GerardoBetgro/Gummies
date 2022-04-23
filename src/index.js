@@ -1,13 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from "react-router-dom";
-import App from './App';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+
+import App from './App';
+import Hero from './componentes/Hero';
+import Cards from './componentes/Cards';
+import About from './componentes/About';
+import Footer from './componentes/Footer';
+
+// If you want to use bootstrap you can introduce the importe right here!
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
-    <App />
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route index element={<Hero/>}/>
+        <Route path="cards" element={<Cards />} />
+        <Route path="about" element={<About />} />
+        <Route path="footer" element={<Footer />} />
+      </Route>
+    </Routes>
   </BrowserRouter>,
 );
 

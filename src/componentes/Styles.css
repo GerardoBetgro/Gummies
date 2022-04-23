@@ -18,6 +18,12 @@ body{
     justify-content: center;
 }
 
+.active{
+    text-decoration: "none";
+    margin: "1rem 0";
+    color: "red";
+}
+
 .card{
     background-color: #fff;
 }
