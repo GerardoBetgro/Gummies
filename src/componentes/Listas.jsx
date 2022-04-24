@@ -14,7 +14,7 @@ import HomeIcon from "@mui/icons-material/Home";
 import PersonSearchIcon from "@mui/icons-material/PersonSearch";
 
 const Listas = () => {
-  const [selectedIndex, setSelectedIndex] = useState(1);
+  const [selectedIndex, setSelectedIndex] = useState(-1);
 
   const handleListItemClick = (event, index) => {
     setSelectedIndex(index);
@@ -22,9 +22,9 @@ const Listas = () => {
 
   return (
     <List component="nav">
-      <NavLink to="/" style={{ color: "#fff", textDecoration: "none" }}>
+      <NavLink to="/" style={{ textDecoration: "none" }} className={({ isActive }) => (isActive ? "active" : "non-active" )}>
         <ListItemButton
-          sx={{ my: "2rem" }}
+          sx={{ my: "2rem"}}
           selected={selectedIndex === 0}
           onClick={(event) => handleListItemClick(event, 0)}
         >
@@ -34,7 +34,7 @@ const Listas = () => {
           <ListItemText primary="Inicio" />
         </ListItemButton>
       </NavLink>
-      <NavLink to="cards" style={{ color: "#fff", textDecoration: "none" }}>
+      <NavLink to="productos" style={{ textDecoration: "none" }} className={({ isActive }) => (isActive ? "active" : "non-active" )}>
         <ListItemButton
           sx={{ my: "2rem" }}
           selected={selectedIndex === 1}
@@ -46,27 +46,36 @@ const Listas = () => {
           <ListItemText primary="Productos" />
         </ListItemButton>
       </NavLink>
-      <NavLink to="about" style={{ color: "#fff", textDecoration: "none" }}>
-        <ListItemButton sx={{ my: "2rem" }} selected={selectedIndex === 2}
-          onClick={(event) => handleListItemClick(event, 2)}>
+      <NavLink to="acerca" style={{ textDecoration: "none" }} className={({ isActive }) => (isActive ? "active" : "non-active" )}>
+        <ListItemButton
+          sx={{ my: "2rem" }}
+          selected={selectedIndex === 2}
+          onClick={(event) => handleListItemClick(event, 2)}
+        >
           <ListItemIcon sx={{ color: "#fff" }}>
             <PersonSearchIcon />
           </ListItemIcon>
           <ListItemText primary="Conocenos" />
         </ListItemButton>
       </NavLink>
-      <NavLink to="footer" style={{ color: "#fff", textDecoration: "none" }}>
-        <ListItemButton sx={{ my: "2rem" }} selected={selectedIndex === 3}
-          onClick={(event) => handleListItemClick(event, 3)}>
+      <NavLink to="redes" style={{ textDecoration: "none" }} className={({ isActive }) => (isActive ? "active" : "non-active" )}>
+        <ListItemButton
+          sx={{ my: "2rem" }}
+          selected={selectedIndex === 3}
+          onClick={(event) => handleListItemClick(event, 3)}
+        >
           <ListItemIcon sx={{ color: "#fff" }}>
             <AppsIcon />
           </ListItemIcon>
           <ListItemText primary="Redes Sociales" />
         </ListItemButton>
       </NavLink>
-      <NavLink to="cards" style={{ color: "#fff", textDecoration: "none" }}>
-        <ListItemButton sx={{ my: "2rem" }} selected={selectedIndex === 4}
-          onClick={(event) => handleListItemClick(event, 4)}>
+      <NavLink to="contacto" style={{ textDecoration: "none" }} className={({ isActive }) => (isActive ? "active" : "non-active" )}>
+        <ListItemButton
+          sx={{ my: "2rem" }}
+          selected={selectedIndex === 4}
+          onClick={(event) => handleListItemClick(event, 4)}
+        >
           <ListItemIcon sx={{ color: "#fff" }}>
             <CallIcon />
           </ListItemIcon>

@@ -4,10 +4,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 import App from './App';
-import Hero from './componentes/Hero';
-import Cards from './componentes/Cards';
-import About from './componentes/About';
-import Footer from './componentes/Footer';
+import Inicio from './routes/Inicio';
+import Productos from './routes/Productos';
+import AcercaDe from './routes/AcercaDe';
+import Redes from './routes/Redes';
+import Contacto from './routes/Contacto';
+import NoEncontrada from './routes/NoEncontrada';
 
 // If you want to use bootstrap you can introduce the importe right here!
 
@@ -16,10 +18,12 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
-        <Route index element={<Hero/>}/>
-        <Route path="cards" element={<Cards />} />
-        <Route path="about" element={<About />} />
-        <Route path="footer" element={<Footer />} />
+        <Route index element={<Inicio/>}/>
+        <Route path="productos" element={<Productos />} />
+        <Route path="acerca" element={<AcercaDe />} />
+        <Route path="redes" element={<Redes />} />
+        <Route path="contacto" element={<Contacto />} />
+        <Route path="*" element={<NoEncontrada />} />
       </Route>
     </Routes>
   </BrowserRouter>,

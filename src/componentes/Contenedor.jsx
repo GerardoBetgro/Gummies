@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Cajon from "./Cajon";
-import { Box } from "@mui/system";
+import { Box } from "@mui/material";
 
 const Contenedor = () => {
   const [abrir,setAbrir] = useState(false)

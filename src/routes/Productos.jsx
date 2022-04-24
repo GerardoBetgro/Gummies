@@ -1,23 +1,14 @@
 import React from "react";
-import {
-  Card,
-  CardMedia,
-  CardContent,
-  Typography,
-  CardActions,
-  ButtonGroup,
-  Box,
-} from "@mui/material";
+import { Card, CardMedia, CardContent, Typography, CardActions, ButtonGroup, Box } from "@mui/material";
 import picture from "../assets/gummies.webp";
-import Opening from "./Opening";
-import "./Styles.css";
+import Opening from "../componentes/Opening";
 
 const Cards = () => {
   return (
     <Box
       sx={{
-        width: { xl: `calc(100% - ${240}px)` },
-        mr: { xl: `${240}px` },
+        width: { xl: `calc(100% - ${220}px)` },
+        mr: { xl: `${220}px` },
       }}
     >
       <Typography

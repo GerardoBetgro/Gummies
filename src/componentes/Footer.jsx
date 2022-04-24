@@ -27,8 +27,8 @@ const Footer = () => {
           theme.palette.mode === "light"
             ? theme.palette.grey[200]
             : theme.palette.grey[800],
-        width: { xl: `calc(100% - ${240}px)` },
-        mr: { xl: `${240}px` },
+        width: { xl: `calc(100% - ${220}px)` },
+        mr: { xl: `${220}px` },
       }}
     >
       <Container maxWidth="sm">

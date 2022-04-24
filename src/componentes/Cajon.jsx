@@ -7,12 +7,12 @@ const Cajon = (props) => {
   return (
     <Drawer
       sx={{
-        width: "240px",
+        width: "220px",
         flexShrink: 0,
         "& .MuiDrawer-paper": {
-          width: "240px",
+          width: "220px",
           boxSizing: "border-box",
-          background: "#311b92",
+          background: "#121858",
         },
       }}
       anchor="right"

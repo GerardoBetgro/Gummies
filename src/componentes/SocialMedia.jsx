@@ -15,17 +15,17 @@ const SocialMedia = () => {
         justifyContent: "center",
       }}
     >
-      <Tooltip title="Facebook">
+      <Tooltip title="Facebook" placement="left">
         <IconButton>
           <FacebookIcon fontSize="large" sx={{ color: blue[500] }} />
         </IconButton>
       </Tooltip>
-      <Tooltip title="Instagram">
+      <Tooltip title="Instagram" placement="top">
         <IconButton>
           <InstagramIcon fontSize="large" sx={{ color: pink[500] }} />
         </IconButton>
       </Tooltip>
-      <Tooltip title="WhatsApp">
+      <Tooltip title="WhatsApp" placement="right">
         <IconButton>
           <WhatsAppIcon fontSize="large" sx={{ color: green[500] }} />
         </IconButton>

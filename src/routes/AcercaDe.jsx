@@ -1,24 +1,26 @@
 import React from "react";
 import { Box, Typography, Container } from "@mui/material";
-import "./Styles.css";
+import Sleep from "../assets/sleep.svg";
+import Sleep1 from "../assets/sleep1.svg";
 
 const About = () => {
   return (
     <Box
       sx={{
-        width: { xl: `calc(100% - ${240}px)` },
-        mr: { xl: `${240}px` },
+        my: "3rem",
+        width: { xl: `calc(100% - ${220}px)` },
+        mr: { xl: `${220}px` },
       }}
     >
       <Typography
         variant="h2"
-        sx={{ mb: "1rem" }}
+        sx={{ mb: "1.5rem" }}
         align="center"
         className="letters"
       >
         Acerca de nuestros productos
       </Typography>
-      <Container sx={{ mb: "2rem" }}>
+      <Container>
         <Typography variant="subtitle1" className="letters">
           De seguro has visto alguna vez entre productos alimenticios o en
           farmacias las "Gomitas para Dormir", estas son como cualquier otra
@@ -38,9 +40,13 @@ const About = () => {
           tomado mucha fama debido a sus beneficios, pero también por su sabor y
           su forma tan divertida.
         </Typography>
+        <Box sx={{ mt: "2rem" }} className="flex">
+          <img src={Sleep1} alt="sleep1" className="fix-image"/>
+          <img src={Sleep} alt="sleep" width="720px" className="fix-image" />
+        </Box>
       </Container>
     </Box>
   );
-}
+};
 
 export default About;

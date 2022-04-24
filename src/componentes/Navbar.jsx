@@ -7,6 +7,7 @@ import {
   Tooltip,
 } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import { Link } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import BedtimeIcon from "@mui/icons-material/Bedtime";
 
@@ -19,8 +20,8 @@ const Navbar = (props) => {
         position="fixed"
         color="dark"
         sx={{
-          width: { xl: `calc(100% - ${240}px)` },
-          mr: { xl: `${240}px` },
+          width: { xl: `calc(100% - ${220}px)` },
+          mr: { xl: `${220}px` },
         }}
       >
         <Toolbar>
@@ -30,7 +31,9 @@ const Navbar = (props) => {
             </IconButton>
           </Tooltip>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            Gomitas
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+              Gomitas
+            </Link>
           </Typography>
           <Tooltip title="Abrir menú">
             <IconButton
