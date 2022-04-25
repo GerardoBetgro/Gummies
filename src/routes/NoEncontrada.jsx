@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Button } from "@mui/material";
-import Error from "../assets/404.svg";
 import { NavLink } from "react-router-dom";
+import Error from "../assets/404.webp";
 
 const NoEncontrada = () => {
   return (
@@ -27,7 +27,7 @@ const NoEncontrada = () => {
           </Button>
         </NavLink>
         <Box sx={{ my: "2rem" }}>
-          <img src={Error} alt="Error 404" className="fix-image-404" />
+          <img src={Error} alt="404 Error" className="fix-image-404"/>
         </Box>
       </Box>
     </Box>

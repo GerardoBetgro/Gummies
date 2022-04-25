@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Typography, Container } from "@mui/material";
-import Sleep from "../assets/sleep.svg";
-import Sleep1 from "../assets/sleep1.svg";
+import Sleep from "../assets/sleep.webp";
+import Sleep1 from "../assets/sleep1.webp";
 
 const About = () => {
   return (
@@ -41,8 +41,8 @@ const About = () => {
           su forma tan divertida.
         </Typography>
         <Box sx={{ mt: "2rem" }} className="flex">
-          <img src={Sleep1} alt="sleep1" className="fix-image"/>
-          <img src={Sleep} alt="sleep" width="720px" className="fix-image" />
+          <img src={Sleep1} alt="sleep1" className="fix-image-1"/>
+          <img src={Sleep} alt="sleep" className="fix-image" />
         </Box>
       </Container>
     </Box>

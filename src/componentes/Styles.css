@@ -33,9 +33,13 @@ body{
     background-color: #fff;
 }
 
+.img-sm{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
 .active{
     color: red;
-    font-weight: bold;
 }
 
 .non-active{
@@ -58,20 +62,49 @@ body{
     color: white;
 }
 
-@media (max-width: 600px) {
-    .fix-image{
+
+.card-sm {
+    width: 400px;
+}
+
+@media (max-width: 900px) {
+    .card-sm {
         width: 300px;
     }
 }
 
+.fix-image{
+    width: 450px;
+}
+
 @media (max-width: 600px) {
-    .fix-image-404{
-        width: 300px;
+    .fix-image{
+        width: 280px;
     }
+}
+
+.fix-image-1{
+    width: 350px;
+}
+
+@media (max-width: 600px) {
+    .fix-image-1{
+        width: 200px;
+    }
+}
+
+.fix-image-404{
+    width: 750px;
 }
 
 @media (max-width: 800px) {
     .fix-image-404{
-        width: 750px;
+        width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .fix-image-404{
+        width: 290px;
     }
 }

@@ -1,18 +1,11 @@
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardActionArea,
-  CardMedia,
-  Typography,
-  Box,
-} from "@mui/material";
+import { Typography, Box, Button } from "@mui/material";
 
 const Redes = () => {
   return (
     <Box
       sx={{
-        my: "3rem",
+        my: "2.5rem",
         width: { xl: `calc(100% - ${220}px)` },
         mr: { xl: `${220}px` },
       }}
@@ -20,66 +13,165 @@ const Redes = () => {
       <Typography
         variant="h2"
         sx={{ my: "2rem" }}
-        align="center"
         className="letters"
+        align="center"
       >
         Redes Sociales
       </Typography>
-      <Box className="flex">
-        <Card sx={{ maxWidth: 345, m: "1rem" }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_960_720.png"
+      <Box sx={{ p: "20px", gridGap: "40px" }} className="flex">
+        <Box
+          sx={{
+            backgroundColor: "#1c1b29",
+            borderRadius: "20px",
+            boxShadow: "0 0 30px rgba(0,0,0,0.18)",
+          }}
+          className="card-sm"
+        >
+          <Box
+            sx={{
+              position: "relative",
+              clipPath: "polygon(0 0,100% 0, 100% 85%, 0 100%)",
+              borderRadius: "20px",
+            }}
+          >
+            <img
+              className="img-sm"
+              src="https://cdn.pixabay.com/photo/2017/06/22/06/22/facebook-2429746_960_720.png"
               alt="facebook"
+              width="350px"
             />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Facebook
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Info Facebook
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card sx={{ maxWidth: 345, m: "1rem" }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image="https://cdn.pixabay.com/photo/2022/04/01/05/40/app-7104075_960_720.png"
+          </Box>
+          <Box sx={{ px: "20px", py: "10px" }}>
+            <Typography
+              variant="h3"
+              sx={{
+                color: "#fff",
+                fontWeight: "600",
+                fontSize: "18px",
+                m: "10px 0 15px 0",
+              }}
+            >
+              Síguenos en Facebook!
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              sx={{
+                color: "#a0a0a0",
+                fontSize: "15px",
+                lineHeight: "30px",
+                fontWeight: "400",
+              }}
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium dignissimos, minus aperiam adipisci exercitationem.
+            </Typography>
+            <Button sx={{ my: "1rem" }} variant="contained" color="light">
+              Visitanos
+            </Button>
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            backgroundColor: "#1c1b29",
+            borderRadius: "20px",
+            boxShadow: "0 0 30px rgba(0,0,0,0.18)",
+          }}
+          className="card-sm"
+        >
+          <Box
+            sx={{
+              position: "relative",
+              clipPath: "polygon(0 0,100% 0, 100% 85%, 0 100%)",
+              borderRadius: "20px",
+            }}
+          >
+            <img
+              className="img-sm"
+              src="https://cdn.pixabay.com/photo/2022/04/01/05/40/app-7104075_960_720.png"
               alt="instagram"
+              width="350px"
             />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Instagram
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Info Instagram
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-        <Card sx={{ maxWidth: 345, m: "1rem" }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="140"
-              image="https://cdn.pixabay.com/photo/2015/08/03/13/58/soon-873316_960_720.png"
+          </Box>
+          <Box sx={{ px: "20px", py: "10px" }}>
+            <Typography
+              variant="h3"
+              sx={{
+                color: "#fff",
+                fontWeight: "600",
+                fontSize: "18px",
+                m: "10px 0 15px 0",
+              }}
+            >
+              Síguenos en Instagram!
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              sx={{
+                color: "#a0a0a0",
+                fontSize: "15px",
+                lineHeight: "30px",
+                fontWeight: "400",
+              }}
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium dignissimos, minus aperiam adipisci exercitationem.
+            </Typography>
+            <Button sx={{ my: "1rem" }} variant="contained" color="light">
+              Visitanos
+            </Button>
+          </Box>
+        </Box>
+        <Box
+          sx={{
+            backgroundColor: "#1c1b29",
+            borderRadius: "20px",
+            boxShadow: "0 0 30px rgba(0,0,0,0.18)",
+          }}
+          className="card-sm"
+        >
+          <Box
+            sx={{
+              position: "relative",
+              clipPath: "polygon(0 0,100% 0, 100% 85%, 0 100%)",
+              borderRadius: "20px",
+            }}
+          >
+            <img
+              className="img-sm"
+              src="https://cdn.pixabay.com/photo/2015/08/03/13/58/soon-873316_960_720.png"
               alt="whatsapp"
+              width="350px"
             />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                WhatsApp
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                Info Wpp
-              </Typography>
-            </CardContent>
-          </CardActionArea>
-        </Card>
+          </Box>
+          <Box sx={{ px: "20px", py: "10px" }}>
+            <Typography
+              variant="h3"
+              sx={{
+                color: "#fff",
+                fontWeight: "600",
+                fontSize: "18px",
+                m: "10px 0 15px 0",
+              }}
+            >
+              Síguenos en WhatsApp!
+            </Typography>
+            <Typography
+              variant="subtitle2"
+              sx={{
+                color: "#a0a0a0",
+                fontSize: "15px",
+                lineHeight: "30px",
+                fontWeight: "400",
+              }}
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium dignissimos, minus aperiam adipisci exercitationem.
+            </Typography>
+            <Button sx={{ my: "1rem" }} variant="contained" color="light">
+              Visitanos
+            </Button>
+          </Box>
+        </Box>
       </Box>
     </Box>
   );
