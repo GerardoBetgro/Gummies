@@ -15,12 +15,6 @@ const Hero = () => {
       <Typography variant="h1" sx={{ my: 2 }}>
         Gomitas para Dormir
       </Typography>
-      {/* <Typography
-        variant="h4"
-        sx={{ my: 2, mx: 2, display: { xs: "block", xl: "none" } }}
-      >
-        “Hoy ha sido un día muy especial, espero que descanses”.
-      </Typography> */}
       <Link to="contacto" style={{ textDecoration: "none" }}>
         <Tooltip title="Vamos allá">
           <Button

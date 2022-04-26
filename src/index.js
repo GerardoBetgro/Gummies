@@ -1,8 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
+import "@fontsource/roboto";
 import App from './App';
 import Inicio from './routes/Inicio';
 import Productos from './routes/Productos';

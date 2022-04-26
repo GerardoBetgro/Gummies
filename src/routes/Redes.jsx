@@ -46,7 +46,7 @@ const Redes = () => {
               variant="h3"
               sx={{
                 color: "#fff",
-                fontWeight: "600",
+                fontWeight: "550",
                 fontSize: "18px",
                 m: "10px 0 15px 0",
               }}
@@ -97,7 +97,7 @@ const Redes = () => {
               variant="h3"
               sx={{
                 color: "#fff",
-                fontWeight: "600",
+                fontWeight: "550",
                 fontSize: "18px",
                 m: "10px 0 15px 0",
               }}
@@ -148,7 +148,7 @@ const Redes = () => {
               variant="h3"
               sx={{
                 color: "#fff",
-                fontWeight: "600",
+                fontWeight: "550",
                 fontSize: "18px",
                 m: "10px 0 15px 0",
               }}

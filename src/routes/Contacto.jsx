@@ -19,16 +19,22 @@ const Contacto = () => {
       </Typography>
       <Typography
         variant="h4"
-        sx={{ my: "1rem" }}
+        sx={{ m: "1rem" }}
         align="center"
         className="letters"
       >
         Pide tus productos con nosotros!
       </Typography>
-      <Box className="flex" sx={{my:"2rem"}}>
-        <Button sx={{m:"1rem"}} variant="contained" color="tree">WhatsApp</Button>
-        <Button sx={{m:"1rem"}} variant="contained" color="primary">Facebook</Button>
-        <Button sx={{m:"1rem"}} variant="contained" color="gray">Correo</Button>
+      <Box className="flex" sx={{ my: "2rem" }}>
+        <Button sx={{ m: "1rem" }} variant="contained" color="tree">
+          WhatsApp
+        </Button>
+        <Button sx={{ m: "1rem" }} variant="contained" color="primary">
+          Facebook
+        </Button>
+        <Button sx={{ m: "1rem" }} variant="contained" color="gray">
+          Correo
+        </Button>
       </Box>
     </Box>
   );
