@@ -26,7 +26,16 @@ const Contacto = () => {
         Pide tus productos con nosotros!
       </Typography>
       <Box className="flex" sx={{ my: "2rem" }}>
-        <Button sx={{ m: "1rem" }} variant="contained" color="tree">
+        <Button
+          sx={{ m: "1rem" }}
+          variant="contained"
+          color="tree"
+          /*
+          href="https://api.whatsapp.com/send?phone=5218445379912&text=Me%20gustaría%20saber%20el%20precio%20de%20sus%20productos"
+          target="_blank"
+          rel="noopener"
+          */
+        >
           WhatsApp
         </Button>
         <Button sx={{ m: "1rem" }} variant="contained" color="primary">

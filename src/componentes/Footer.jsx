@@ -7,7 +7,7 @@ const Copyright = () => {
     <Typography variant="h6" color="text.secondary">
       <Link
         color="inherit"
-        href="https://gera-es.web.app/"
+        /*href="https://gera-es.web.app/"*/
         sx={{ textDecoration: "none", fontWeight: "bold" }}
       >
         © Gomitas para dormir 2022

@@ -62,10 +62,14 @@ const Redes = () => {
                 fontWeight: "400",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium dignissimos, minus aperiam adipisci exercitationem.
+              Te invitamos a seguir nuestra página para encontrar todas nuestras
+              actualizaciones de tus productos favoritos.
             </Typography>
-            <Button sx={{ my: "1rem" }} variant="contained" color="light">
+            <Button
+              sx={{ my: "1rem" }}
+              variant="contained"
+              color="light"
+            >
               Visitanos
             </Button>
           </Box>
@@ -113,8 +117,9 @@ const Redes = () => {
                 fontWeight: "400",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium dignissimos, minus aperiam adipisci exercitationem.
+              Revisa nuestra galería de imágenes en donde podrás encontrar
+              nuestros productos y conocer más acerca de estos, así como
+              promociones.
             </Typography>
             <Button sx={{ my: "1rem" }} variant="contained" color="light">
               Visitanos
@@ -164,8 +169,8 @@ const Redes = () => {
                 fontWeight: "400",
               }}
             >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Praesentium dignissimos, minus aperiam adipisci exercitationem.
+              Puedes comunicarte directamente vía WhatsApp para solicitar la
+              cantidad de productos que desees adquirir con nosotros.
             </Typography>
             <Button sx={{ my: "1rem" }} variant="contained" color="light">
               Visitanos
