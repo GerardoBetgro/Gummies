@@ -8,7 +8,6 @@ import App from './App';
 import Inicio from './routes/Inicio';
 import Productos from './routes/Productos';
 import AcercaDe from './routes/AcercaDe';
-import Redes from './routes/Redes';
 import Contacto from './routes/Contacto';
 import NoEncontrada from './routes/NoEncontrada';
 
@@ -22,7 +21,6 @@ root.render(
         <Route index element={<Inicio/>}/>
         <Route path="productos" element={<Productos />} />
         <Route path="acerca" element={<AcercaDe />} />
-        <Route path="redes" element={<Redes />} />
         <Route path="contacto" element={<Contacto />} />
         <Route path="*" element={<NoEncontrada />} />
       </Route>

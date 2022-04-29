@@ -58,18 +58,6 @@ const Listas = () => {
           <ListItemText primary="Conocenos" />
         </ListItemButton>
       </NavLink>
-      <NavLink to="redes" style={{ textDecoration: "none" }} className={({ isActive }) => (isActive ? "active" : "non-active" )}>
-        <ListItemButton
-          sx={{ my: "2rem" }}
-          selected={selectedIndex === 3}
-          onClick={(event) => handleListItemClick(event, 3)}
-        >
-          <ListItemIcon sx={{ color: "#fff" }}>
-            <AppsIcon />
-          </ListItemIcon>
-          <ListItemText primary="Redes Sociales" />
-        </ListItemButton>
-      </NavLink>
       <NavLink to="contacto" style={{ textDecoration: "none" }} className={({ isActive }) => (isActive ? "active" : "non-active" )}>
         <ListItemButton
           sx={{ my: "2rem" }}

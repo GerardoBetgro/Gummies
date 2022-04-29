@@ -1,7 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { Box, Button, Tooltip, Typography } from "@mui/material";
 import AddShoppingCartRoundedIcon from "@mui/icons-material/AddShoppingCartRounded";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
